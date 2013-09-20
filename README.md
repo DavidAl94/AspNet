@@ -1,4 +1,4 @@
-﻿# Windows Azure Web Sites and Cloud Services #
+﻿# One ASP.NET / Hybrid Site #
 
 ## Demo ##
 
