@@ -12,7 +12,6 @@ In this demo you will:
 1. Create a new site using the Web Forms template but including MVC and Web API references.
 1. Demonstrate that Default.aspx works as expected
 1. Create a new Person model (int ID, string Name, int Age)
-1. Scaffold Web Forms pages with read / write actions (<http://www.asp.net/web-forms/tutorials/aspnet-45/aspnet-scaffolding-with-web-forms>) 
 1. Scaffold a new MVC controller named MvcPerson (<http://www.asp.net/mvc/tutorials/mvc-5/introduction/accessing-your-models-data-from-a-controller>) 
 1. Scaffold a new Web API controller ApiPerson (<http://www.asp.net/web-api/overview/web-api-routing-and-actions/create-a-rest-api-with-attribute-routing>) 
 1. Start the site and browse to the Web Forms page and browse to /Person/ to demonstrate the web forms scaffolded pages.
@@ -88,7 +87,7 @@ This demo is composed of the following segments:
 
 1. Close the browser.
 
-1. Create a _Person_ model class. To do that, right-click the **Model** folder and expand the **Add** menu and select **Class**.
+1. Create a _Person_ model class. To do that, right-click the **Model** folder, expand the **Add** menu and select **Class**.
 
 	![Adding a new model class](images/adding-a-new-class.png?raw=true "Adding a new model class")
 
@@ -119,7 +118,7 @@ This demo is composed of the following segments:
 <a name="Segment2" />
 ### Creating an MVC Controller using Scaffolding ###
 
-1. Create the controller and views for the _Person_ Model class using scaffolding. To do that, right-click the **Controllers** folder and expand the **Add** menu and select **New Scaffolded Item...**
+1. Create the controller and views for the _Person_ Model class using scaffolding. To do that, right-click the **Controllers** folder, expand the **Add** menu and select **New Scaffolded Item...**
 
 	![Creating a new scaffolded Controller](images/adding-scaffolding-controller.png?raw=true "Creating a new Controller")
 
@@ -170,7 +169,7 @@ This demo is composed of the following segments:
 <a name="Segment3" />
 ### Creating a Web API using Scaffolding ###
 
-1. Create the Web API controller for the _Person_ Model class using scaffolding. To do that, right-click the **Controllers** folder and expand the **Add** menu and select **New Scaffolded Item...**
+1. Create the Web API controller for the _Person_ Model class using scaffolding. To do that, right-click the **Controllers** folder, expand the **Add** menu and select **New Scaffolded Item...**
 
 	![Creating a new scaffolded Controller](images/adding-scaffolding-controller.png?raw=true "Creating a new Controller")
 
@@ -207,7 +206,37 @@ This demo is composed of the following segments:
 
 1. Press **F5** to run the web site.
 
-1. Navigate to **/MvcPerson**.
+1. Navigate to **/MvcPerson** and showcase the MVC scaffolding result.
+
+	![Navigating to the scaffolded MVC views](images/running-mvc-index.png?raw=true "Navigating to the scaffolded MVC views")
+
+	_Navigating to the scaffolded MVC views_
+
+1. Create a new person by clicking the **Create New** link.
+
+	![Creating a new person](images/running-mvc-creating.png?raw=true "Creating a new person")
+
+	_Creating a new person_
+
+1. Show the new element in the index view.
+
+	![Showing the new element in the index view](images/running-mvc-listing.png?raw=true "Showing the new element in the index view")
+
+	_Showing the new element in the index view_
+
+1. Click the **Details** link and show the created element's details.
+
+	![Showing the new element details](images/running-mvc-details.png?raw=true "Showing the new element details")
+
+	_Showing the new element details_
+
+1. Go back to the index page by clicking the **Back  to List** link.
+
+1. Finally, click on the **Delete** link to delete the element.
+
+	![Deleting the element](images/running-mvc-deleting.png?raw=true "Deleting the element")
+
+	_Deleting the element_
 
 ---
 
@@ -218,7 +247,6 @@ By completing this demo you should have:
 
  * Created a new site using the Web Forms template but including MVC and Web API references.
  * Created a new Person model (int ID, string Name, int Age)
- * Scaffolded Web Forms pages with read / write actions
  * Scaffolded a new MVC controller named MvcPerson
  * Scaffolded a new Web API controller ApiPerson
  * Started the site and browsed to all the generated pages.
