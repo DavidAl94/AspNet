@@ -63,11 +63,12 @@ This demo is composed of the following segments:
 
 1. Select the **Web Forms** template and check the **MVC** and **Web API** options.
 
+1. Click **OK** to create the project.
+
 	![Selecting the Web Forms template](images/selecting-web-forms-template.png?raw=true "Selecting the Web Forms template")
 
-	_Selecting the Web Forms template_
+	_Creating a new project with the WebForms template, including Web API and MVC libraries._
 
-1. Click **OK** to create the project.
 
 1. Explore the generated solution in the **Solution Explorer**.
 
@@ -85,9 +86,11 @@ This demo is composed of the following segments:
 
 	_Navigating to the default webform_
 
+	> **Note:** Even if we are on that page, specifying .aspx in the URL emphasizes the fact that this is WebForms.
+
 1. Close the browser.
 
-1. Create a _Person_ model class. To do that, right-click the **Model** folder, expand the **Add** menu and select **Class**.
+1. Create a new model class named _Person_. To do that, right-click the **Models** folder, expand the **Add** menu and select **Class...**.
 
 	![Adding a new model class](images/adding-a-new-class.png?raw=true "Adding a new model class")
 
@@ -99,7 +102,7 @@ This demo is composed of the following segments:
 
 	_Creating the Person model class_
 
-1. Add the following code to the **Person** class.
+1. Add the highlighted code in the following code snippet to the **Person** class.
 
 	<!-- mark:3-7 -->
 	````C#
@@ -118,7 +121,7 @@ This demo is composed of the following segments:
 <a name="Segment2" />
 ### Creating an MVC Controller using Scaffolding ###
 
-1. Create the controller and views for the _Person_ Model class using scaffolding. To do that, right-click the **Controllers** folder, expand the **Add** menu and select **New Scaffolded Item...**
+1. Create the controller and views for the _Person_ model class using scaffolding. To do that, right-click the **Controllers** folder, expand the **Add** menu and select **New Scaffolded Item...**
 
 	![Creating a new scaffolded Controller](images/adding-scaffolding-controller.png?raw=true "Creating a new Controller")
 
@@ -130,11 +133,17 @@ This demo is composed of the following segments:
 
 	_Selecting the MVC 5 Controller with views and Entity Framework_
 
-1. Change the name of the controller to **PersonController**.
+1. Change the name of the controller to **MvcPersonController**.
 
 	![Changing the controller name](images/changing-the-controller-name.png?raw=true "Changing the controller name")
 
 	_Changing the controller name_
+
+1. Check the **Use async controller actions** checkbox.
+
+	![Checking the use async controller actions checkbox](images/checking-the-async-option.png?raw=true "Checking the use async controller actions checkbox")
+
+	_Checking the use async controller actions checkbox_
 
 1. Select **Person** from the **Model class** list.
 
@@ -148,21 +157,15 @@ This demo is composed of the following segments:
 
 	_Creating the new PersonContext_
 
-1. Check the **Use async controller actions** checkbox.
-
-	![Checking the use async controller actions checkbox](images/checking-the-async-option.png?raw=true "Checking the use async controller actions checkbox")
-
-	_Checking the use async controller actions checkbox_
-
 1. Finally, click **Add** to create the views and the controller with the default actions.
 
 	![Creating the MvcPerson Controller](images/creating-the-mvcperson-controller.png?raw=true "Creating the MvcPerson Controller")
 
 	_Creating the MvcPerson Controller_
 
-1. Expand to the **Controller** folder and show the **MvcPersonController.cs** file, which was just created.
+1. In the **Solution Explorer**, expand the **Controllers** folder and show the **MvcPersonController.cs** file, which was just created.
 
-1. Open the **MvcPersonController.cs** file to show the generated content.
+1. Open the **MvcPersonController.cs** file to show the generated code.
 
 1. Expand the **Views** folder and show the new views under the **MvcPerson** folder.
 
@@ -189,7 +192,7 @@ This demo is composed of the following segments:
 
 	_Selecting the Person model_
 
-1. Check the **Use async controller actions** checkbox.
+1. If not selected, select the **Use async controller actions** option.
 
 1. Finally, click **Add** to create the API controller with the default actions.
 
@@ -197,42 +200,44 @@ This demo is composed of the following segments:
 
 	_Creating the ApiPerson Web API_
 
-1. Expand to the **Controller** folder and show the **ApiPersonController.cs** file, which was just created.
+1. In **Solution Explorer** expand the **Controller** folder and show the **ApiPersonController.cs** file, which was just created.
 
-1. Open the **ApiPersonController.cs** file to show the generated content.
+1. Open the **ApiPersonController.cs** file to show the generated code.
 
 <a name="Segment4" />
 ### Running the site ###
 
 1. Press **F5** to run the web site.
 
-1. Navigate to **/MvcPerson** and showcase the MVC scaffolding result.
+1. Navigate to **/MvcPerson** to show the scaffolded view.
+
+1. Start creting a new person by clicking **Create New**. 
 
 	![Navigating to the scaffolded MVC views](images/running-mvc-index.png?raw=true "Navigating to the scaffolded MVC views")
 
 	_Navigating to the scaffolded MVC views_
 
-1. Create a new person by clicking the **Create New** link.
+1. Provide values for the fields and click **Create**.
 
 	![Creating a new person](images/running-mvc-creating.png?raw=true "Creating a new person")
 
 	_Creating a new person_
 
-1. Show the new element in the index view.
+1. Show the new element in the list.
 
 	![Showing the new element in the index view](images/running-mvc-listing.png?raw=true "Showing the new element in the index view")
 
 	_Showing the new element in the index view_
 
-1. Click the **Details** link and show the created element's details.
+1. Click **Details** and show the person's details.
 
 	![Showing the new element details](images/running-mvc-details.png?raw=true "Showing the new element details")
 
 	_Showing the new element details_
 
-1. Go back to the index page by clicking the **Back  to List** link.
+1. Go back to the index page by clicking **Back  to List**.
 
-1. Finally, click on the **Delete** link to delete the element.
+1. Finally, click on **Delete** to delete the person.
 
 	![Deleting the element](images/running-mvc-deleting.png?raw=true "Deleting the element")
 
@@ -245,10 +250,10 @@ This demo is composed of the following segments:
 
 By completing this demo you should have:
 
- * Created a new site using the Web Forms template but including MVC and Web API references.
+ * Created a new site using the Web Forms template and including MVC and Web API references.
  * Created a new Person model (int ID, string Name, int Age)
  * Scaffolded a new MVC controller named MvcPerson
  * Scaffolded a new Web API controller ApiPerson
- * Started the site and browsed to all the generated pages.
+ * Started the site and browsed to different generated pages.
 
 ---
