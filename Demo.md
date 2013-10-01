@@ -39,6 +39,13 @@ In this demo, you will see how to:
 ### Setup and Configuration ###
 In order to execute this demo you need to set up your environment.
 
+1. Follow the steps detailed in [this link](http://docs.nuget.org/docs/creating-packages/hosting-your-own-nuget-feeds) to setup local sources for the following directories:
+
+	* **C:\Program Files (x86)\Microsoft Web Tools\Packages**
+	* **C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Stack 5\Packages**
+
+	![Nuget Sources](Images/nuget-sources.png?raw=true)
+
 1. Open Visual Studio 2013.
 
 <a name="Demo" />
