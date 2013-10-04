@@ -5,35 +5,25 @@
 <a name="Overview" />
 ## Overview ##
 
-Demonstrates the new One ASP.NET tooling in Visual Studio by adding MVC and API controllers to a Web Forms application.
-
-In this demo you will:
-
-1. Create a new site using the Web Forms template but including MVC and Web API references.
-1. Demonstrate that Default.aspx works as expected
-1. Create a new Person model (int ID, string Name, int Age)
-1. Scaffold a new MVC controller named MvcPerson (<http://www.asp.net/mvc/tutorials/mvc-5/introduction/accessing-your-models-data-from-a-controller>) 
-1. Scaffold a new Web API controller ApiPerson (<http://www.asp.net/web-api/overview/web-api-routing-and-actions/create-a-rest-api-with-attribute-routing>) 
-1. Start the site and browse to the Web Forms page and browse to /Person/ to demonstrate the web forms scaffolded pages.
-1. Browse to /MvcPerson to show the MVC scaffolded pages
+In this demo you will walk through the process of creating a new site using the new One ASP.NET tooling in Visual Sudio. You will start with a Web Forms application, create a simple model "Person" and use the new tooling to scaffold an MVC and a Web Api controller for it.
 
 <a id="goals" />
 ### Goals ###
 In this demo, you will see how to:
 
-1. (TODO: Insert goal 1 here)
-1. (TODO: Insert goal 2 here)
-1. (TODO: Insert goal 3 here)
+1. Create a new site using the new One ASP.NET tooling
+1. Create a simple model "Person"
+1. Scaffold an MVC controller for Person
+1. Scaffold a Web API controller for Person
 
 <a name="technologies" />
 ### Key Technologies ###
 
-- {TODO: Include technology name here} [here][1]
-- {TODO: Include technology name here}
-- [{TODO: Include technology name here}][2]
+- [Microsoft Visual Studio 2013][1]
+- [ASP.NET][2]
 
-[1]: http://insert_link_to_technology_1_here/
-[2]: http://insert_link_to_technology_2_here/
+[1]: http://www.microsoft.com/visualstudio/eng/visual-studio-2013
+[2]: http://www.asp.net
 
 <a name="Setup" />
 ### Setup and Configuration ###
@@ -257,10 +247,9 @@ This demo is composed of the following segments:
 
 By completing this demo you should have:
 
- * Created a new site using the Web Forms template and including MVC and Web API references.
- * Created a new Person model (int ID, string Name, int Age)
- * Scaffolded a new MVC controller named MvcPerson
- * Scaffolded a new Web API controller ApiPerson
- * Started the site and browsed to different generated pages.
+ * Created a new Web Forms site using the new One ASP.NET template.
+ * Created a simple model "Person"
+ * Scaffolded a new MVC controller for Person
+ * Scaffolded a new Web API controller for Person
 
 ---
